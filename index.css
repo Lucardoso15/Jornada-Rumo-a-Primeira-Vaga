@@ -1,0 +1,70 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;/*caixa medida de borda a bora e elemina a soma de height com padding*/
+    /*configuração mais leve para a fonte*/
+    -webkit-font-smoothing: antialiased;/*motor webkit - safari chrome*/
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    text-align: center;
+    padding-top: 160px;
+    background-image: url(https://i.ibb.co/Wy1Rp66/background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover; /*cobre o tam que enteende ser o body*/
+    height: 100vh; /*aumenta o body, mas junta com o meu valor de padding de 160
+    Para resolver isso vou através do seletor universal box-sizing*/
+    background-position: center;
+
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+
+h1{
+ color: #FFC700;
+ font-weight: 400;
+ font-size: 64px;
+ line-height: 80px;
+
+ font-family: 'Emilys Candy', cursive;
+}
+
+
+h3 span{ /*especificidade, vai procurar o span dentro do h3*/
+    color: #FFC700;
+}
+
+h3{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+p{
+    color: #FFFFFF;
+    opacity: .7;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 72px;
+}
+
+a{ /*espaço nos links*/
+    padding: 12px 32px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: .6; /*opacidade do read more*/
+}
+
+a:hover,  /*todo a com o mouse em cima e a classe de baixo*/
+.btn-primary {/* - classe 10 espec. seletor de classe - botão paly now */
+    background-color: #FFC700;
+    color: #040101;
+    text-decoration: none; /*sem linha embaixo*/
+    opacity: 1;
+}
